@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="402px" height="202px">
+    <style type="text/css">
+        <![CDATA[
+
+        svg {
+            font-family:monospace;
+        }
+
+        .copyright {
+            font-size:6px;
+            fill:#808080;
+            alignment-baseline: central;
+        }
+
+        .digit path,
+        .digit circle {
+            fill: #FF0000;
+            stroke: #000000;
+            stroke-width: 2;
+       }
+        .digit text {
+            font-size:14px;
+            fill:#000000;
+            text-anchor:middle;
+            alignment-baseline: central;
+        }
+
+      ]]>
+    </style>
+
+    <defs>
+        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#DADADA" stroke-width="1"/>
+        </pattern>
+
+        <g id="digit" class="digit">
+            <path d="M 18 10 h64 v5 l -10 10 h-44 l -10 -10 z"/>
+
+            <path d="M 10 18 v60 h5 l 10 -10 v-40 l -10 -10 z"/>
+            <path d="M 90 18 v60 h-5 l -10 -10 v-40 l 10 -10 z"/>
+
+            <path d="M 19 80 l 7 -7 h48 l 7 7 l -7 7 h-48 l -7 -7 z"/>
+
+            <path d="M 10 82 v60 h5 l 10 -10 v-40 l -10 -10 z"/>
+            <path d="M 90 82 v60 h-5 l -10 -10 v-40 l 10 -10 z"/>
+
+            <path d="M 18 150 h64 v-5 l -10 -10 h-44 l -10 10 z"/>
+
+            <text x="50" y="17">A</text>
+            <text x="82" y="50">B</text>
+            <text x="82" y="110">C</text>
+            <text x="50" y="142">D</text>
+            <text x="17" y="110">E</text>
+            <text x="17" y="50">F</text>
+            <text x="50" y="80">G</text>
+        </g>
+
+        <g id="dp" class="digit">
+            <circle cx="10" cy="10" r="5"/>
+            <circle cx="10" cy="50" r="5"/>
+            <text x="10" y="30">dp</text>
+        </g>
+    </defs>
+
+    <rect width="100%" height="100%" fill="url(#grid)"/>
+
+    <g>
+        <use xlink:href="#digit" x="10" y="10"/>
+        <use xlink:href="#dp" x="120" y="60"/>
+    </g>
+
+    <g transform="translate(200, 20) scale(0.2)">
+        <use xlink:href="#digit" x="0" y="0"/>
+        <use xlink:href="#digit" x="110" y="0"/>
+        <use xlink:href="#dp" x="220" y="50"/>
+        <use xlink:href="#digit" x="250" y="0"/>
+        <use xlink:href="#digit" x="360" y="0"/>
+
+        <text x="30" y="230" font-size="70px">1</text>
+        <text x="140" y="230" font-size="70px">2</text>
+
+        <text x="280" y="230" font-size="70px">3</text>
+        <text x="390" y="230" font-size="70px">4</text>
+    </g>
+
+    <text class="copyright" x="100" y="5" style="">XantoTM1637 &#169;Xantorohara</text>
+</svg>
