@@ -29,9 +29,11 @@ void loop() {
 ![Drawing](https://github.com/xantorohara/XantoTM1637/raw/master/extras/XantoTM1637-drawing.png?raw=true)
 
 
-Symbol|dp|G|F|E|D|C|B|A|HEX code
-------|--|-|-|-|-|-|-|-|--------
-  A   | 0|0|0|0|0|0|0|0|0x00
+Symbol | H | G | F | E | D | C | B | A | HEX code
+------ | - | - | - | - | - | - | - | - | --------
+ 1     | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0x00
+ 2     | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0x00
+ 3     | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0x00
  
 ## Class API
 [ ] Todo write methods
@@ -41,6 +43,7 @@ Symbol|dp|G|F|E|D|C|B|A|HEX code
 
 ## TM1637 devices
 "Digital tube" module for Arduino:
+
 <a href="http://s.click.aliexpress.com/e/FiqN3JQfe" target="_blank">
 ![Digital tubes](https://github.com/xantorohara/XantoTM1637/raw/master/extras/digital-tube-blue.png?raw=true)
 </a>
