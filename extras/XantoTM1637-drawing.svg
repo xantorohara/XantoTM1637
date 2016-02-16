@@ -5,7 +5,7 @@
 
         svg {
             font-family:monospace;
-            shape-rendering: crispEdges;
+//            shape-rendering: crispEdges;
         }
 
         .copyright {
@@ -60,18 +60,18 @@
         <g id="dp" class="digit">
             <circle cx="10" cy="10" r="5"/>
             <circle cx="10" cy="50" r="5"/>
-            <text x="10" y="30">dp</text>
+            <text x="10" y="30">H</text>
         </g>
     </defs>
 
     <rect width="100%" height="100%" fill="url(#grid)"/>
 
-    <g>
+    <g transform="">
         <use xlink:href="#digit" x="10" y="10"/>
         <use xlink:href="#dp" x="120" y="60"/>
     </g>
 
-    <g transform="translate(200, 20) scale(0.2)">
+    <g transform="translate(200, 20) scale(0.2) skewX(-6)">
         <use xlink:href="#digit" x="0" y="0"/>
         <use xlink:href="#digit" x="110" y="0"/>
         <use xlink:href="#dp" x="220" y="50"/>

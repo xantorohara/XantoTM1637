@@ -24,15 +24,31 @@ void loop() {
 [ ] Todo write about
 
 ## Drawing
-[ ] Todo write description
  
 ![Drawing](https://github.com/xantorohara/XantoTM1637/raw/master/extras/XantoTM1637-drawing.png?raw=true)
 
+Symbol to byte code mapping table:
 
-Symbol |  H  |  G  |  F  |  E  |  D  |  C  |  B  |  A  | HEX code
------- | --- | --- | --- | --- | --- | --- | --- | --- | --------
- 0     |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  | 0x00
- 1     |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  | 0x00
+Symbol |  A  |  B  |  C  |  D  |  E  |  F  |  G  |  H  | HEX byte code
+------ | --- | --- | --- | --- | --- | --- | --- | --- | -------------
+   0   |  1  |  1  |  1  |  1  |  1  |  1  |  0  |  0  |   0xFC
+   1   |  0  |  1  |  1  |  0  |  0  |  0  |  0  |  0  |   0x60
+   2   |  1  |  1  |  0  |  1  |  1  |  0  |  1  |  0  |   0xDA   
+   3   |  1  |  1  |  1  |  1  |  0  |  0  |  1  |  0  |   0xF2   
+   4   |  0  |  1  |  1  |  0  |  0  |  1  |  1  |  0  |   0x66   
+   5   |  1  |  0  |  1  |  1  |  0  |  1  |  1  |  0  |   0xB6   
+   6   |  1  |  0  |  1  |  1  |  1  |  1  |  1  |  0  |   0xBE   
+   7   |  1  |  1  |  1  |  0  |  0  |  0  |  0  |  0  |   0xE0   
+   8   |  1  |  1  |  1  |  1  |  1  |  1  |  1  |  0  |   0xFE   
+   9   |  1  |  1  |  1  |  1  |  0  |  1  |  1  |  0  |   0xF6   
+   A   |  1  |  1  |  1  |  0  |  1  |  1  |  1  |  0  |   0xEE   
+   b   |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  |   0x00   
+   C   |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  |   0x00   
+   d   |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  |   0x00   
+   E   |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  |   0x00   
+   F   |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  |   0x00   
+   A   |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  |   0x00   
+   -   |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  |   0x00   
  
 ## Class API
 [ ] Todo write methods
