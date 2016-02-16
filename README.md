@@ -37,7 +37,7 @@ void loop() {
 ## TM1637 devices
 [ ] TODO write text
 
-![![Digital tubes](http://s.click.aliexpress.com/e/FiqN3JQfe)](https://github.com/xantorohara/XantoTM1637/raw/master/extras/digital-tube-blue.png?raw=true)
+[![Digital tubes](http://s.click.aliexpress.com/e/FiqN3JQfe)](https://github.com/xantorohara/XantoTM1637/raw/master/extras/digital-tube-blue.png?raw=true)
 
 
 
