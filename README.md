@@ -29,11 +29,10 @@ void loop() {
 ![Drawing](https://github.com/xantorohara/XantoTM1637/raw/master/extras/XantoTM1637-drawing.png?raw=true)
 
 
-Symbol | H | G | F | E | D | C | B | A | HEX code
------- | - | - | - | - | - | - | - | - | --------
- 1     | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0x00
- 2     | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0x00
- 3     | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0x00
+Symbol |  H  |  G  |  F  |  E  |  D  |  C  |  B  |  A  | HEX code
+------ | --- | --- | --- | --- | --- | --- | --- | --- | --------
+ 0     |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  | 0x00
+ 1     |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  | 0x00
  
 ## Class API
 [ ] Todo write methods
