@@ -36,17 +36,19 @@ void loop() {
 
 ## TM1637 devices
 [ ] TODO write text
-[AliExpress](http://s.click.aliexpress.com/e/FiqN3JQfe)
+
+![![Digital tubes](http://s.click.aliexpress.com/e/FiqN3JQfe)](https://github.com/xantorohara/XantoTM1637/raw/master/extras/digital-tube-blue.png?raw=true)
+
+
 
 
 ## Examples
-* [XantoTM1637_Seconds_Counter](https://github.com/xantorohara/XantoTM1637/tree/master/examples/XantoTM1637_Seconds_Counter) 
-- 
+- [XantoTM1637_Seconds_Counter](https://github.com/xantorohara/XantoTM1637/tree/master/examples/XantoTM1637_Seconds_Counter)
 [ ] TODO write text
 
 
 ## Related projects
-* [XantoTM1637](https://github.com/xantorohara/XantoTM1637) - a library for a "Digital Tube" (4-digit display module).
+- [XantoTM1637](https://github.com/xantorohara/XantoTM1637) - a library for a "Digital Tube" (4-digit display module).
 XantoI2C uses XantoI2C library for I2C communications with TM1637 chip.
 
   

@@ -5,6 +5,7 @@
 
         svg {
             font-family:monospace;
+            shape-rendering: crispEdges;
         }
 
         .copyright {
