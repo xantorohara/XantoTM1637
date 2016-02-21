@@ -20,94 +20,108 @@
 
 const uint8_t TM1637_COMMAND1 = 0x02;
 const uint8_t TM1637_COMMAND2 = 0x03;
-const uint8_t TM1637_COMMAND3 = 0xF1;
+const uint8_t TM1637_COMMAND3 = 0x01;
 
 /**
- * Codes for some chars
+ * Codes for digits and symbols.
+ * Each code is a combination (0bABCDEFGH)
+ * of corresponding segments:
+ *   ___
+ *  | A |
+ *  F   B  #
+ *  |_G_|  H
+ *  |   |  #
+ *  E   C
+ *  |_D_|
+ *
  */
-struct TM1637_CODE {
+struct TM1637_CODES {
   enum Enum : uint8_t {
-    // Decimal digits
-    D0 = 0xFC, //0
-    D1 = 0x60, //1
-    D2 = 0xDA, //2
-    D3 = 0xF2, //3
-    D4 = 0x66, //4
-    D5 = 0xB6, //5
-    D6 = 0xBE, //6
-    D7 = 0xE0, //7
-    D8 = 0xFE, //8
-    D9 = 0xF6, //9
-
-    //Letters
-    A = 0xFF,
-    b = 0xFF,
-    C = 0xFF,
-    c = 0xFF,
-    d = 0xFF,
-    E = 0xFF,
-    F = 0xFF,
-    J = 0xFF,
-    H = 0xFF,
-    h = 0xFF,
-    L = 0xFF,
-    n = 0xFF,
-    o = 0xFF,
-    P = 0xFF,
-    q = 0xFF,
-    r = 0xFF,
-    U = 0xFF,
-    u = 0xFF,
-
-    //Borders
-    Btbl = 0xFF, //top-bottom-left borders
-    Btb = 0xFF, //top-bottom borders
-    Btrb = 0xFF, //top-right-bottom borders
-
-    //Other,
-    MINUS = 0x00,
-    SPACE = 0x00 // all segments off
+    C0 = 0b11111100, //0
+    C1 = 0b01100000, //1
+    C2 = 0b11011010, //2
+    C3 = 0b11110010, //3
+    C4 = 0b01100110, //4
+    C5 = 0b10110110, //5
+    C6 = 0b10111110, //6
+    C7 = 0b11100000, //7
+    C8 = 0b11111110, //8
+    C9 = 0b11110110, //9
+    //   0bABCDEFGH
+    CA = 0b11101110, //A
+    Cb = 0b00111110, //b
+    CC = 0b10011100, //C
+    Cd = 0b01111010, //d
+    CE = 0b10011110, //E
+    CF = 0b10001110, //F
+    Cr = 0b00001010, //For "Err " message
+    MINUS = 0b00000010, // -
+    DEGREE = 0b11000110, // degree sign
+    SPACE = 0b00000000 //All segments off
   };
 };
 
 const uint8_t TM1637_DIGITS[16] = {
-  TM1637_CODE::D0,
-  TM1637_CODE::D1,
-  TM1637_CODE::D2,
-  TM1637_CODE::D3,
-  TM1637_CODE::D4,
-  TM1637_CODE::D5,
-  TM1637_CODE::D6,
-  TM1637_CODE::D7,
-  TM1637_CODE::D8,
-  TM1637_CODE::D9,
-  TM1637_CODE::A,
-  TM1637_CODE::b,
-  TM1637_CODE::C,
-  TM1637_CODE::d,
-  TM1637_CODE::E,
-  TM1637_CODE::F,
+  TM1637_CODES::C0,
+  TM1637_CODES::C1,
+  TM1637_CODES::C2,
+  TM1637_CODES::C3,
+  TM1637_CODES::C4,
+  TM1637_CODES::C5,
+  TM1637_CODES::C6,
+  TM1637_CODES::C7,
+  TM1637_CODES::C8,
+  TM1637_CODES::C9,
+  TM1637_CODES::CA,
+  TM1637_CODES::Cb,
+  TM1637_CODES::CC,
+  TM1637_CODES::Cd,
+  TM1637_CODES::CE,
+  TM1637_CODES::CF,
 };
 
 class XantoTM1637 {
   private:
     XantoI2C i2c;
-    uint8_t brightness;
+    uint8_t control = TM1637_COMMAND3;
     uint8_t data[5] = {TM1637_COMMAND2, 0xFE, 0xFE, 0xFE, 0xFE};
-
     void digitsToSegments();
     void colonToSegments(uint8_t show_colon = true);
-
+    void onToControl(uint8_t on);
+    void brightnessToControl(uint8_t brightness);
     void write_i2c();
 
   public:
+
+    /**
+     * Create a new instance of the XantoTM1637
+     * clock_pin - any digital pin for SCL (CLK) line
+     * data_pin - any digital pin for SDA (DIO) line
+     */
     XantoTM1637(uint8_t clock_pin, uint8_t data_pin, uint8_t brightness = 3);
+
+    /**
+     * Switch the display on
+     */
+    void on();
+
+    /**
+     * Switch the display off
+     */
+    void off();
+
+    /**
+     * Set display brightness.
+     * Min brightness: 0
+     * Max brightness: 7
+     */
+    void setBrightness(uint8_t brightness);
 
     /**
      * Display decimal number.
      * Max value: 9999
      */
-    void displayNumber(uint16_t number);
+    void displayNumber(uint16_t number, uint8_t leading_zeroes = true);
 
     /**
      * Display hexadecimal number.
@@ -144,6 +158,11 @@ class XantoTM1637 {
      * Display "Err " word.
      */
     void displayError();
+
+    /**
+     * Clear the display
+     */
+    void clear();    
 };
 
 #endif XANTO_TM1637
