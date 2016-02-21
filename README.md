@@ -14,7 +14,7 @@ These are typical "Digital tube" modules:
 3. Install these libraries (for example, via Arduino IDE: Sketch -> Include Library -> Add .ZIP Library...)
 4. Use it 
 
-This dummy sample demonstrates basic usage of the library:
+This sample demonstrates basic usage of the library:
 
 ```cpp
 #include <XantoI2C.h>
@@ -39,7 +39,14 @@ void loop() {
 
 ## About XantoTM1637
 
-[ ] Todo write about
+Another one library for TM1637 chip with these points: 
+
+* Display numbers in different formats: decimal, hexadecimal, binary
+* Display time (seconds or minutes) using mm:ss or hh:mm formats
+* Display raw segments
+* Brightness control
+* Display ON/OFF
+* Software I2C layer, so it is possible to use multiple devices at one time
 
 ## Drawing
  
