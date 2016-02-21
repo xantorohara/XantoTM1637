@@ -1,5 +1,12 @@
 # XantoTM1637
-"Digital tube" library implementation for Arduino
+"Digital tube" library for Arduino
+
+## TM1637 devices
+This is a "Digital tube" module (4-Digit LED Display based on TM1637 chip):
+
+<a href="http://s.click.aliexpress.com/e/FiqN3JQfe" target="_blank">
+![Digital tubes](https://github.com/xantorohara/XantoTM1637/raw/master/extras/digital-tube-blue.png?raw=true)
+</a>
 
 ## Quick start
 1. Download XantoI2C library: [XantoI2C-master.zip](https://github.com/xantorohara/XantoI2C/archive/master.zip)
@@ -61,14 +68,6 @@ So, in order to show this decimal point just set H bit to 1 for digit 2.
 
 ```
 
-## TM1637 devices
-"Digital tube" modules for Arduino:
-
-<a href="http://s.click.aliexpress.com/e/FiqN3JQfe" target="_blank">
-![Digital tubes](https://github.com/xantorohara/XantoTM1637/raw/master/extras/digital-tube-blue.png?raw=true)
-</a>
-
-
 ## Examples
 - [XantoTM1637_Seconds_Counter](https://github.com/xantorohara/XantoTM1637/tree/master/examples/XantoTM1637_Seconds_Counter)
 [ ] TODO write text
@@ -80,7 +79,7 @@ XantoI2C uses XantoI2C library for I2C communications with TM1637 chip.
 
   
 ## References
-* :blue_book: [TM1637 datasheeet (English version)](http://xantorohara.github.io/datasheets/TM1637_V2.4_EN.pdf)
+* :blue_book: [TM1637 datasheet (English version)](http://xantorohara.github.io/datasheets/TM1637_V2.4_EN.pdf)
 
 ## Author
 Xantorohara <xantorohara@gmail.com>
