@@ -1,8 +1,8 @@
 # XantoTM1637
-"Digital tube" library for Arduino
+Arduino library for "Digital tube" (4-Digit LED Display based on TM1637 chip)
 
-## TM1637 devices
-This is a "Digital tube" module (4-Digit LED Display based on TM1637 chip):
+## Digital tube
+These are typical "Digital tube" modules:
 
 <a href="http://s.click.aliexpress.com/e/FiqN3JQfe" target="_blank">
 ![Digital tubes](https://github.com/xantorohara/XantoTM1637/raw/master/extras/digital-tube-blue.png?raw=true)
@@ -28,6 +28,7 @@ void loop() {
 
 
 ## About XantoTM1637
+
 [ ] Todo write about
 
 ## Drawing
@@ -63,20 +64,26 @@ Symbol |  A  |  B  |  C  |  D  |  E  |  F  |  G  |  H  | Code
 So, in order to show this decimal point just set H bit to 1 for digit 2.
  
 ## Class API
+
 [ ] Todo write methods
+
 ```cpp
 
 ```
 
 ## Examples
-- [XantoTM1637_Seconds_Counter](https://github.com/xantorohara/XantoTM1637/tree/master/examples/XantoTM1637_Seconds_Counter)
-[ ] TODO write text
+* [XantoTM1637_Demo](https://github.com/xantorohara/XantoTM1637/tree/master/examples/XantoTM1637_Demo) -
+demonstrates abilities of the library
 
+* [XantoTM1637_Seconds_Counter](https://github.com/xantorohara/XantoTM1637/tree/master/examples/XantoTM1637_Seconds_Counter) -
+just displays time in seconds
 
 ## Related projects
-- [XantoTM1637](https://github.com/xantorohara/XantoTM1637) - a library for a "Digital Tube" (4-digit display module).
-XantoI2C uses XantoI2C library for I2C communications with TM1637 chip.
+* [XantoI2C](https://github.com/xantorohara/XantoI2C) - 
+XantoTM1637 uses XantoI2C library for I2C communications with a TM1637 chip.
 
+* [LED matrix 8x8 online editor] (https://github.com/xantorohara/led-matrix-editor) -
+online tool for editing and creating animations for LED matrices.
   
 ## References
 * :blue_book: [TM1637 datasheet (English version)](http://xantorohara.github.io/datasheets/TM1637_V2.4_EN.pdf)
