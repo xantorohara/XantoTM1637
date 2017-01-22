@@ -162,6 +162,9 @@ demonstrates abilities of the library
 * [XantoTM1637_Seconds_Counter](https://github.com/xantorohara/XantoTM1637/tree/master/examples/XantoTM1637_Seconds_Counter) -
 just displays time in seconds
 
+* [XantoTM1637_Multiple_Displays](https://github.com/xantorohara/XantoTM1637/tree/master/examples/XantoTM1637_Multiple_Displays) -
+output numbers using multiple display modules. 
+
 ## Related projects
 * [XantoI2C](https://github.com/xantorohara/XantoI2C) - 
 XantoTM1637 uses XantoI2C library for I2C communications with a TM1637 chip.
