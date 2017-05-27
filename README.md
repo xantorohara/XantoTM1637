@@ -173,7 +173,7 @@ XantoTM1637 uses XantoI2C library for I2C communications with a TM1637 chip.
 online tool for editing and creating animations for LED matrices.
   
 ## References
-* :blue_book: [TM1637 datasheet (English version)](http://xantorohara.github.io/datasheets#M1637)
+* :blue_book: [TM1637 datasheet (English version)](http://xantorohara.github.io/datasheets#TM1637)
 
 ## Author
 Xantorohara <xantorohara@gmail.com>
