@@ -169,7 +169,7 @@ output numbers using multiple display modules.
 * [XantoI2C](https://github.com/xantorohara/XantoI2C) - 
 XantoTM1637 uses XantoI2C library for I2C communications with a TM1637 chip.
 
-* [LED matrix 8x8 online editor](https://github.com/xantorohara/led-matrix-editor) -
+* [LED matrix 8x8 online editor](https://xantorohara.github.io/led-matrix-editor/) -
 online tool for editing and creating animations for LED matrices.
   
 ## Author
