@@ -166,7 +166,7 @@ just displays time in seconds
 output numbers using multiple display modules. 
 
 ## Related projects
-* [XantoI2C](https://github.com/xantorohara/XantoI2C) - 
+* [XantoI2C](https://xantorohara.github.io/XantoI2C/) - 
 XantoTM1637 uses XantoI2C library for I2C communications with a TM1637 chip.
 
 * [LED matrix 8x8 online editor](https://xantorohara.github.io/led-matrix-editor/) -
