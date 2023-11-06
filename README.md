@@ -4,11 +4,9 @@ Arduino library for "Digital tube" (4-Digit LED Display based on TM1637 chip)
 ## Digital tube
 These are typical "Digital tube" modules:
 
-<a href="http://s.click.aliexpress.com/e/FiqN3JQfe" target="_blank">
 
-![Digital tubes](https://github.com/xantorohara/XantoTM1637/raw/master/extras/digital-tube-blue.png?raw=true)
+[![Digital tubes](https://github.com/xantorohara/XantoTM1637/raw/master/extras/digital-tube-blue.png?raw=true)](http://s.click.aliexpress.com/e/bmWeJxis)
 
-</a>
 
 ## Quick start
 1. Download XantoI2C library: [XantoI2C-master.zip](https://github.com/xantorohara/XantoI2C/archive/master.zip)
@@ -168,14 +166,11 @@ just displays time in seconds
 output numbers using multiple display modules. 
 
 ## Related projects
-* [XantoI2C](https://github.com/xantorohara/XantoI2C) - 
+* [XantoI2C](https://xantorohara.github.io/XantoI2C/) - 
 XantoTM1637 uses XantoI2C library for I2C communications with a TM1637 chip.
 
-* [LED matrix 8x8 online editor] (https://github.com/xantorohara/led-matrix-editor) -
+* [LED matrix 8x8 online editor](https://xantorohara.github.io/led-matrix-editor/) -
 online tool for editing and creating animations for LED matrices.
   
-## References
-* :blue_book: [TM1637 datasheet (English version)](http://xantorohara.github.io/datasheets#TM1637)
-
 ## Author
 Xantorohara <xantorohara@gmail.com>
